@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center; 
     flex-direction: column;   
-    width: auto;
+    width: 70%;
+    margin: auto;
 }
 
 .nav_flexbox{
@@ -52,6 +53,11 @@
     flex-direction: column;
 }
 
+.secondary_footer_flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
@@ -83,7 +89,14 @@
 
        /* UTILITIES */
 
-.nav_link{
+#header_container{
+    background-color: #163cfa;
+    
+
+}
+
+
+       .nav_link{
     padding: 0.3rem 4rem;
     text-decoration: none;
     font-weight: 600;
@@ -178,6 +191,7 @@
     height: auto;
     width: auto;
     background-color: lightslategrey;
+    border-bottom: 2px solid black;
 }
 
 
@@ -200,7 +214,7 @@
     width: 180px;
     height: 600px;
     background-color: blue;
-    border: 0.5px solid black;
+   
 
 }
 
@@ -210,4 +224,15 @@
 
 #col_container{
     float: left;
+}
+
+hr{
+    color: black;
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+}
+
+#secondary_footer_container{
+    width: auto;
+    padding-top: 3rem;
 }
