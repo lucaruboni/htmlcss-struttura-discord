@@ -129,8 +129,7 @@
 }
 
 .small_square{
-    width: 280px;
-    height: 350px;
+    width: 100%;
     background-color: blueviolet;
     float: left;
    
@@ -157,4 +156,14 @@
 .first_section{
     width: auto;
    
+}
+
+.bg_white{
+    background-color: lightgray;
+}
+
+#ending_square{
+    width: 1100px;
+    height: 600px;
+    background-color: mediumseagreen;
 }
