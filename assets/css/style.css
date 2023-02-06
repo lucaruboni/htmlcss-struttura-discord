@@ -9,8 +9,9 @@
 
 #flex_container{
     display: flex;
-    justify-content:center ;    
-   
+    justify-content: center; 
+    flex-direction: column;   
+    width: auto;
 }
 
 .nav_flexbox{
@@ -29,11 +30,22 @@
     
 }
 
-.header_clearfix::after{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
+
+.main_flexbox{
+    display: flex;
+    align-self: center;
+    
+}
+
+.section_flexbox{
+    display: flex;
+}
+
 
 
 
@@ -41,7 +53,6 @@
 
 .debug_header{
     background-color: blue;
-    height: 800px;
     border: 1px solid black;
     box-shadow: 0 0 10px;
 }
@@ -59,27 +70,29 @@
 }
 
 .debug_headsection{
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 300px;
     background-color: aliceblue;   
 }
 
        /* UTILITIES */
 
 .nav_link{
-    padding: 0.4rem 4rem;
+    padding: 0.3rem 4rem;
     text-decoration: none;
     font-weight: 600;
     color: black;
 }
 
+
 .app_header{
-    width: 1600px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 .header_menu{
     padding: 1rem;
+  
 }
 
 .logo_login{
@@ -105,4 +118,42 @@
 #header_section{
     align-self: center;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.grey_bg{
+    width: auto;
+    background-color: lightgrey;
+}
+
+.small_square{
+    width: 280px;
+    height: 350px;
+    background-color: blueviolet;
+    float: left;
+   
+    
+}
+
+.big_square{
+    width: 580px;
+    height: 350px;
+    background-color: cornflowerblue;
+    float: left;
+    flex-shrink: 1;
+}
+
+.main_padding{
+   padding: 5rem 33rem;
+}
+
+.main_section_container{
+    width: auto;
+    background-color: black;  
+}
+
+.first_section{
+    width: auto;
+   
 }
