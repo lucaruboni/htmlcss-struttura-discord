@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+       /* FLEX SECTION */
+
 #flex_container{
     display: flex;
     justify-content:center ;    
@@ -15,6 +17,28 @@
     display: flex;
 }
 
+.header_flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_menu_flexbox{
+    display: flex;
+    justify-content: center;
+    width: auto;  
+    
+}
+
+.header_clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+           /* DEBUG REGION */
+
 .debug_header{
     background-color: blue;
     height: 800px;
@@ -23,7 +47,7 @@
 }
 
 .debug_header_menu{
-    background-color: coral;
+    background-color: #163cfa;
     
 }
 
@@ -34,33 +58,24 @@
   
 }
 
-.app_header{
-    width: 1600px;
-    font-family: 'Roboto', sans-serif;
+.debug_headsection{
+    width: 800px;
+    height: 500px;
+    background-color: aliceblue;   
 }
 
-.header_flexbox{
-    display: flex;
-    flex-direction: column;
-}
-
-.header_clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.header_menu_flexbox{
-    display: flex;
-    justify-content: center;
-    width: auto;  
-    
-}
+       /* UTILITIES */
 
 .nav_link{
     padding: 0.4rem 4rem;
     text-decoration: none;
     font-weight: 600;
+    color: black;
+}
+
+.app_header{
+    width: 1600px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header_menu{
@@ -72,11 +87,7 @@
     line-height: 29px;
 }
 
-.logo_flexbox{
-    display: flex;
-    flex-direction: column;
 
-}
 
 .sx_text{
     padding-right: 5rem;
@@ -89,4 +100,9 @@
     padding-left: 5rem;
     padding-right: 0.3rem;
     font-weight: 800;
+}
+
+#header_section{
+    align-self: center;
+    margin-top: 5rem;
 }
