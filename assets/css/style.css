@@ -39,6 +39,7 @@
 .main_flexbox{
     display: flex;
     align-self: center;
+    flex-direction: column;
     
 }
 
@@ -145,7 +146,7 @@
 }
 
 .main_padding{
-   padding: 5rem 33rem;
+   padding: 5rem 34rem;
 }
 
 .main_section_container{
